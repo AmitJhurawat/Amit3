@@ -1,0 +1,11 @@
+ protected void Button2_Click(object sender, EventArgs e)
+    {
+            conn.Open();
+        String str = "INSERT into Table_1 VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "');";
+        SqlCommand query = new SqlCommand(str);
+        query.Connection = conn;
+        query.ExecuteReader();
+        Response.Write("Congrats You Have Been Registerd");
+        conn.Close();
+    }
+        
