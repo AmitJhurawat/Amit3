@@ -7,5 +7,5 @@
         query.ExecuteReader();
         Response.Write("Congrats You Have Been Registerd");
         conn.Close();
-    }
+    }lol
         
